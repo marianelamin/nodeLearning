@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Dibujemos</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div id="connections"></div>
+        <div id="cursors">
+            <!-- aqui pondremos los cursores de nuestros amigos -->
+        </div>
+
+        <canvas id="paper" width="700" height="500"> 
+            Tu navegador debe soportar canvas
+        </canvas>
+
+        <hgroup id="instructions">
+            <h1>Dibujemos</h1>
+            <h2>Dibuja en cualqueir lugar con tu cursor</h2>
+            <h3>si quieres un canvas nuevo simplemente refresca la pagina</h3>
+        </hgroup>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
