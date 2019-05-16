@@ -20,5 +20,7 @@ function serverCallback(req,res){
   res.writeHead(200, {'Content-Type':'text/plain'});
   res.end('******** response is: *******\n'+data);}
 
-http.createServer(serverCallback).listen(8081);
-console.log('node is running on port 8081');
+var port = 8082;
+
+http.createServer(serverCallback).listen(port);
+console.log('node is running on port '+port+'\n');
