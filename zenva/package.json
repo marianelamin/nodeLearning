@@ -13,6 +13,7 @@
   "author": "Marianela Crissman",
   "license": "ISC",
   "dependencies": {
-    "moment": "^2.24.0"
+    "moment": "^2.24.0",
+    "request": "^2.88.0"
   }
 }
