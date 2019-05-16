@@ -41,6 +41,8 @@ request('https://www.bnefoodtrucks.com.au/api/1/trucks', function (err,request_r
     request_body = body;
 });
 
+var port = 8088;
+
 http.createServer(function(req, res){
     if(request_body && html_content){
         res.writeHead(200,{'content-type':'text/html'});
@@ -50,7 +52,7 @@ http.createServer(function(req, res){
         res.writeHead(200,{'content-type':'text/plain'});
         res.end('Nothing retrieved yet');
     }
-}).listen(8088);
+}).listen(port);
 
 fs.readFile('./index.html', function(err, html){
     if (err){
@@ -61,3 +63,5 @@ fs.readFile('./index.html', function(err, html){
         html_content = html;
     }
 });
+
+console.log('apiReq.js listening on port ' +port);

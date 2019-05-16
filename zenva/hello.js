@@ -23,4 +23,4 @@ function serverCallback(req,res){
 var port = 8082;
 
 http.createServer(serverCallback).listen(port);
-console.log('node is running on port '+port+'\n');
+console.log('hello.js is running on port '+port+'\n');
